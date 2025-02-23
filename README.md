@@ -19,25 +19,25 @@ Un document détaillant l'architecture du SIEM est disponible dans ce dépôt.
 
 Le projet est accompagné d’une documentation complète comprenant :
 
-- **[Rapport de configuration]** : Explication détaillée des configurations appliquées.
-- **[Schéma d'architecture]** : Diagramme détaillant le fonctionnement et les flux du SIEM.
-- **[Manuel d’utilisation]** : Explication de l’utilisation du SIEM et des scénarios de tests.
-- 
+ **[Rapport de configuration]** : Explication détaillée des configurations appliquées.
+ **[Schéma d'architecture]** : Diagramme détaillant le fonctionnement et les flux du SIEM.
+ **[Manuel d’utilisation]** : Explication de l’utilisation du SIEM et des scénarios de tests.
+ 
 ## Architecture
 
 ### Flux de traitement
 
-- Windows 10 → Wazuh Manager (analyse et détection d’anomalies).
-- Wazuh Manager → Shuffle (envoi des alertes).
-- Shuffle → Enrichissement OSINT des IOCs.
-- Shuffle → Création d’alertes dans TheHive pour la gestion des incidents.
-- Shuffle → Envoi d’emails et exécution de réponses automatisées.
+ Windows 10 → Wazuh Manager (analyse et détection d’anomalies).
+ Wazuh Manager → Shuffle (envoi des alertes).
+ Shuffle → Enrichissement OSINT des IOCs.
+ Shuffle → Création d’alertes dans TheHive pour la gestion des incidents.
+ Shuffle → Envoi d’emails et exécution de réponses automatisées.
 
 ### Technologies utilisées
 
-- **Wazuh** : Surveillance des événements et détection des menaces.
-- **Shuffle** : Automatisation des workflows de réponse.
-- **TheHive** : Gestion des incidents de cybersécurité.
-- **OSINT APIs** : Enrichissement des indicateurs de compromission.
-- **Docker / Machines virtuelles** : Environnement de déploiement.
+**Wazuh** : Surveillance des événements et détection des menaces.
+ **Shuffle** : Automatisation des workflows de réponse.
+ **TheHive** : Gestion des incidents de cybersécurité.
+**OSINT APIs** : Enrichissement des indicateurs de compromission.
+**Docker / Machines virtuelles** : Environnement de déploiement.
 
